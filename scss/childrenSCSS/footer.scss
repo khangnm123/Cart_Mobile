@@ -1,0 +1,41 @@
+@import './variable_.scss';
+footer{
+    background-color: $color-pink5E;
+    padding: 15px 5px;
+    ul{
+        li{
+            padding-bottom: 15px;
+            #test{
+                font-size: 24px;
+                color: $color-green;
+            }
+            a{
+                color: $color-green;
+                font-size: 18px;
+            }
+        }
+        .row{
+          img{
+            width: 25px;
+            height: 25px;
+            margin-bottom: 15px;
+          }
+        }
+    }
+}
+.footer_end{
+    background-color: $color-green;
+    padding: 15px 5px;
+    .text_a{
+        a{
+        color: #FFFFFF;
+        font-size: 16px;
+        }
+    }
+    .text1_a{
+       a{
+        color: #FFFFFF;
+        font-size: 16px;
+       }
+    }
+}

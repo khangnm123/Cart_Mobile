@@ -1,0 +1,39 @@
+//==============Header==============//
+@import './variable_.scss';
+.nav_top{
+    background-color: $color-green;
+    @include Urbanist-Medium;
+    color:#FFFFFF;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+.nav_bottom{
+    background-color: $color-pink5E;
+    .list_content{
+        @include font-Urbanist;
+        padding: 10px 0px;
+        li{
+            a{
+                color: $color-green;
+                @include Urbanist-Medium;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            img{
+                height: 120px;
+            }
+        }
+    }
+}
+.text_cart{
+    .center_flex{
+       padding-top: 47px;
+       padding-bottom: 20px;
+        h3{
+            @include Urbanist-Medium;
+            font-size: 20px;
+            font-weight: 500;
+            color: $color-green;
+        }
+    }
+}

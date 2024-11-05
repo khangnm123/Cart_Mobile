@@ -1,0 +1,110 @@
+//========Nơi để xử lý button============//
+@import './variable_.scss';
+.button_left{
+    padding-top: 50px;
+    .button_select{
+        button{
+            @include buttonUse;
+            a{
+                background: $color-green6C;
+                @include boder_bold;
+                color: #FFFFFF;
+                padding: 7px 60px;
+                font-weight: 300;
+                font-size: 24px;
+            }
+        }
+    }
+    .button_count{
+       button{
+        @include buttonUse;
+        a{
+            @include boder_bold;
+            padding: 5px 40px;
+            font-size: 24px;
+            color: #000;
+        }
+        #left1{
+            position: absolute;
+            left:8px;
+            font-size: 24px;
+            color: #000;
+        }
+        #right1{
+            position: absolute;
+            right: 8px;
+            font-size: 24px;
+            color: #000;
+        }
+       }
+    }
+}
+.button_flex{
+    padding-top: 50px;
+    button{
+        @include buttonUse;
+        a{
+            @include boder_bold;
+            padding: 14px 80px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .button_left1{
+        a{
+            border: 2px solid $color-green;
+            color: $color-green;
+        }
+    }
+    .button_left2{
+        a{
+            background: $color-green !important;
+            color: #FFFFFF;
+        }
+    }
+}
+.button_add{
+    button{
+        padding: 10px;
+        a{
+            color: #000;
+            font-weight: bold;
+        }
+        .text_price{
+            #pd{
+                color:#5B5B5B;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+
+//===========Start===============//
+
+.rate {
+    float: left;
+    height: 46px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#000;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+
+
+.swiper-button-next, .swiper-button-prev{
+    color: #000;
+}
