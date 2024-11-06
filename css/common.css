@@ -9,6 +9,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Unbounded:wght@500&family=Urbanist:wght@500&display=swap");
 .center_flex {
   max-width: 1200px;
   margin: 0 auto;
@@ -131,21 +137,27 @@ h3 {
 .button_left {
   padding-top: 50px;
 }
-.button_left .button_select button {
-  border: none !important;
-  outline: none;
-  border: 1px solid #000;
-  border-radius: 5px;
-  background: none;
+.button_left .button_select {
+  margin-right: 15px;
 }
-.button_left .button_select button a {
-  background: #76C78D;
+.button_left .button_select button {
   border: 1px solid #000;
   border-radius: 10px;
+  background-color: #76C78D;
+  width: 240px;
+  height: 45px;
+  padding: 10px 15px 10px 15px;
+  align-items: center;
+}
+.button_left .button_select button a {
   color: #FFFFFF;
-  padding: 7px 60px;
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 500;
+}
+.button_left .button_select button i {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
 }
 .button_left .button_count button {
   border: none !important;
@@ -157,7 +169,7 @@ h3 {
 .button_left .button_count button a {
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 5px 40px;
+  padding: 3px 40px;
   font-size: 24px;
   color: #000;
 }
@@ -193,28 +205,65 @@ h3 {
 }
 .button_flex .button_left1 a {
   border: 2px solid #003F12;
-  color: #003F12;
+  color: #000000;
 }
 .button_flex .button_left2 a {
   background: #003F12 !important;
   color: #FFFFFF;
 }
 
+.button_add {
+  padding-top: 15px;
+}
 .button_add button {
-  padding: 10px;
+  padding: 5px 5px;
 }
 .button_add button a {
   color: #000;
   font-weight: bold;
 }
+.button_add button .text_price p {
+  font-size: 16px;
+  font-weight: bold;
+}
 .button_add button .text_price #pd {
   color: #5B5B5B;
   text-decoration: line-through;
+  font-size: 16px;
+}
+
+.email_button input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  border: 2px solid #000;
+  width: 100%;
+  padding: 15px;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+}
+
+.button_submit button {
+  border: none;
+  background: none;
+  outline: none;
+  padding-top: 20px;
+}
+.button_submit button a {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #FCB7BB;
+  border: 2px solid #000000;
+  padding: 16px 70px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .rate {
   float: left;
-  height: 46px;
+  height: 30px;
 }
 
 .rate:not(:checked) > input {
@@ -228,7 +277,7 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   color: #000;
 }
 
@@ -309,7 +358,7 @@ h3 {
   font-weight: 200;
 }
 .shopping_cart .list_card .list_item .cart_total {
-  border-top: 1px solid #000;
+  border-top: 2px solid #003F12;
   padding-top: 40px;
 }
 .shopping_cart .list_card .list_item .cart_total h2 {
@@ -370,6 +419,10 @@ h3 {
 .cart_slider .row .item .start .text_review p {
   text-decoration: underline;
   color: #000;
+  font-size: 10px;
+}
+.cart_slider .row .item .text_slider {
+  padding-top: 30px;
 }
 .cart_slider .row .item .text_slider p {
   font-size: 18px;
@@ -384,9 +437,590 @@ h3 {
   padding: 0px 8px;
 }
 
+.center_flex {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#pd {
+  padding: 0px 8px;
+}
+
+.center_flex {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#pd {
+  padding: 0px 8px;
+}
+
+.button_left {
+  padding-top: 50px;
+}
+.button_left .button_select {
+  margin-right: 15px;
+}
+.button_left .button_select button {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #76C78D;
+  width: 240px;
+  height: 45px;
+  padding: 10px 15px 10px 15px;
+  align-items: center;
+}
+.button_left .button_select button a {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+}
+.button_left .button_select button i {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+.button_left .button_count button {
+  border: none !important;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: none;
+}
+.button_left .button_count button a {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 3px 40px;
+  font-size: 24px;
+  color: #000;
+}
+.button_left .button_count button #left1 {
+  position: absolute;
+  left: 8px;
+  font-size: 24px;
+  color: #000;
+}
+.button_left .button_count button #right1 {
+  position: absolute;
+  right: 8px;
+  font-size: 24px;
+  color: #000;
+}
+
+.button_flex {
+  padding-top: 50px;
+}
+.button_flex button {
+  border: none !important;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: none;
+}
+.button_flex button a {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 14px 80px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.button_flex .button_left1 a {
+  border: 2px solid #003F12;
+  color: #000000;
+}
+.button_flex .button_left2 a {
+  background: #003F12 !important;
+  color: #FFFFFF;
+}
+
+.button_add {
+  padding-top: 15px;
+}
+.button_add button {
+  padding: 5px 5px;
+}
+.button_add button a {
+  color: #000;
+  font-weight: bold;
+}
+.button_add button .text_price p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.button_add button .text_price #pd {
+  color: #5B5B5B;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.email_button input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  border: 2px solid #000;
+  width: 100%;
+  padding: 15px;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+}
+
+.button_submit button {
+  border: none;
+  background: none;
+  outline: none;
+  padding-top: 20px;
+}
+.button_submit button a {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #FCB7BB;
+  border: 2px solid #000000;
+  padding: 16px 70px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rate {
+  float: left;
+  height: 30px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+}
+
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000;
+}
+
+.shopping_cart .text-center h2 {
+  font-size: 36px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #003F12;
+  text-transform: uppercase;
+}
+.shopping_cart .text-center p {
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003F12;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+.shopping_cart .text-center span {
+  font-size: 20px;
+  color: #003F12;
+}
+.shopping_cart .list_card {
+  margin: 20px 0px;
+}
+.shopping_cart .list_card .center_flex {
+  border: 1px solid #000;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+.shopping_cart .list_card .list_item {
+  padding: 60px;
+}
+.shopping_cart .list_card .list_item .item_image {
+  margin-right: 30px;
+}
+.shopping_cart .list_card .list_item .item_button .price_money p {
+  font-size: 28px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.shopping_cart .list_card .list_item .item_button .heart_right {
+  padding-top: 70px;
+  text-align: center;
+}
+.shopping_cart .list_card .list_item .item_button .heart_right i {
+  font-size: 31px;
+}
+.shopping_cart .list_card .list_item .item_text .text_h3 {
+  color: #003F12;
+}
+.shopping_cart .list_card .list_item .item_text .text_h3 h3 {
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.shopping_cart .list_card .list_item .item_text .text_h3 p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #003F12;
+  font-weight: 200;
+}
+.shopping_cart .list_card .list_item .cart_total {
+  border-top: 2px solid #003F12;
+  padding-top: 40px;
+}
+.shopping_cart .list_card .list_item .cart_total h2 {
+  font-size: 28px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #003F12;
+  text-transform: uppercase;
+}
+.shopping_cart .list_card .list_item .cart_total p {
+  margin-right: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #003F12;
+}
+
+.item {
+  padding: 50px 0px;
+  border-top: 1px solid #000;
+}
+.item .text_bottom {
+  justify-content: right;
+}
+.item .text_bottom p {
+  font-size: 20px;
+  margin-right: 25px;
+  text-decoration: underline;
+  line-height: 2px;
+}
+
+.cart_slider {
+  padding-top: 40px;
+}
+.cart_slider h3 {
+  font-size: 32px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #003F12;
+}
+.cart_slider .row .item {
+  border-top: unset;
+}
+.cart_slider .row .item h4 {
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 0px;
+  margin: unset;
+}
+.cart_slider .row .item .start .text_review p {
+  text-decoration: underline;
+  color: #000;
+  font-size: 10px;
+}
+.cart_slider .row .item .text_slider {
+  padding-top: 30px;
+}
+.cart_slider .row .item .text_slider p {
+  font-size: 18px;
+}
+
+.picture_image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whowe_are h2 {
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.whowe_are p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #003F12;
+  font-size: 32px;
+  color: #000000;
+  font-weight: bold;
+  padding-bottom: 132px;
+}
+.whowe_are .picture_grid .row .col {
+  padding: unset !important;
+  margin: unset !important;
+}
+.whowe_are .picture_grid .row img {
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.whowe_are .picture_grid .row p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #003F12;
+  padding: 32px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.logo_icon {
+  padding-top: 52px;
+}
+.logo_icon .logo_slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #76C78D;
+}
+.logo_icon .logo_slider .logos_slide {
+  display: flex;
+  animation: 45s slide infinite linear;
+}
+.logo_icon .logo_slider .logos_slide p {
+  font-size: 32px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+  color: #003F12;
+  margin: 0px 50px;
+}
+.logo_icon .logo_slider .logos_slide1 {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+.logo_icon .logo_slider .logos_slide1 img {
+  height: 22px;
+  margin: 0 40px;
+}
+.logo_icon .logo_picture .picture_image {
+  background-image: url("../../image/Image_About/Rectangle 199.png");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 264px;
+}
+.logo_icon .logo_picture .picture_image .text_picture {
+  padding: 72px 5px;
+}
+.logo_icon .logo_picture .picture_image .text_picture p {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+.logo_icon .logo_picture .picture_image #pc1 {
+  width: 269px;
+  height: 269px;
+  left: 0px;
+  position: absolute;
+}
+.logo_icon .logo_picture .picture_image #pc2 {
+  width: 269px;
+  height: 269px;
+  right: 0;
+  position: absolute;
+}
+
+.meet_out h2 {
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 56px 5px 42px 5px;
+}
+.meet_out img {
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.meet_out .image_founder h3 {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 43px 5px;
+}
+.meet_out .image_founder p {
+  font-size: 24px;
+  letter-spacing: 8px;
+  color: #5C5C5C;
+  text-transform: uppercase;
+  padding-top: 63px;
+}
+.meet_out .image_founder #pd {
+  letter-spacing: unset;
+}
+
+.best_seller h2 {
+  font-size: 40px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 119px;
+  padding-bottom: 24px;
+}
+.best_seller h3 {
+  font-size: 40px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.best_seller h3 b {
+  font-size: 40px;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px 31px;
+}
+.best_seller .row .new_drop .button_new {
+  position: absolute;
+  top: 27px;
+  left: 13px;
+  background: #003F12;
+}
+.best_seller .row .new_drop .button_new p {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 300;
+  padding: 5px 38px 7px 19px;
+}
+.best_seller .row .item {
+  border-top: unset;
+}
+.best_seller .row .item img {
+  width: 100%;
+}
+.best_seller .row .item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 38px;
+  padding-bottom: 12px;
+}
+.best_seller .row .item p {
+  font-size: 16px;
+  color: #000000;
+}
+.best_seller .row .item .start {
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+.best_seller .row .item .start .rate:not(:checked) > label {
+  font-size: 24px;
+}
+.best_seller .row .item .start .text_review {
+  border-bottom: 1px solid #000;
+}
+.best_seller .row .item .start .text_review p {
+  font-size: 10px;
+  color: #000000;
+}
+.best_seller .row .button_add button {
+  padding: 15px 10px;
+}
+
+.keep_simple {
+  padding-top: 103px;
+  padding-bottom: 71px;
+}
+.keep_simple h3 {
+  font-size: 40px;
+  color: #1E1E1E;
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.keep_simple .item1 {
+  padding-top: 38px;
+}
+.keep_simple .item1 p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 28px;
+}
+
+.contact_explore h3 {
+  font-family: "Unbounded", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+}
+.contact_explore p {
+  font-size: 24px;
+  color: #000000;
+}
+.contact_explore .contest_explore {
+  padding: 112px 5px 0px 5px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.center_flex {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#pd {
+  padding: 0px 8px;
+}
+
 footer {
   background-color: #F5E2D6;
-  padding: 15px 5px;
+  padding: 45px 5px;
 }
 footer ul li {
   padding-bottom: 15px;
@@ -397,21 +1031,29 @@ footer ul li #test {
 }
 footer ul li a {
   color: #003F12;
-  font-size: 18px;
+  font-size: 16px;
 }
 footer ul .row img {
   width: 25px;
   height: 25px;
   margin-bottom: 15px;
 }
+footer .list_contest {
+  display: grid !important;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+}
 
 .footer_end {
   background-color: #003F12;
-  padding: 15px 5px;
+  padding: 25px 5px;
 }
 .footer_end .text_a a {
   color: #FFFFFF;
   font-size: 16px;
+}
+.footer_end .text1_a {
+  margin-right: 65px;
 }
 .footer_end .text1_a a {
   color: #FFFFFF;

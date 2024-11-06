@@ -1,17 +1,26 @@
 //========Nơi để xử lý button============//
 @import './variable_.scss';
+//========Button Cart============//
 .button_left{
     padding-top: 50px;
     .button_select{
+        margin-right: 15px;
         button{
-            @include buttonUse;
+            @include boder_bold;
+            background-color: $color-green6C;
+            width: 240px;
+            height: 45px;
+            padding: 10px 15px 10px 15px;
+            align-items: center;
             a{
-                background: $color-green6C;
-                @include boder_bold;
                 color: #FFFFFF;
-                padding: 7px 60px;
-                font-weight: 300;
                 font-size: 24px;
+                font-weight: 500;
+            }
+            i{
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: bold;
             }
         }
     }
@@ -20,7 +29,7 @@
         @include buttonUse;
         a{
             @include boder_bold;
-            padding: 5px 40px;
+            padding: 3px 40px;
             font-size: 24px;
             color: #000;
         }
@@ -53,7 +62,7 @@
     .button_left1{
         a{
             border: 2px solid $color-green;
-            color: $color-green;
+            color: #000000;
         }
     }
     .button_left2{
@@ -64,27 +73,63 @@
     }
 }
 .button_add{
+    padding-top: 15px;
     button{
-        padding: 10px;
+        padding: 5px 5px;
         a{
             color: #000;
             font-weight: bold;
+
         }
         .text_price{
+            p{
+                font-size: 16px;
+                font-weight: bold;
+            }
             #pd{
                 color:#5B5B5B;
                 text-decoration: line-through;
+                font-size: 16px;
             }
         }
     }
 }
-
-
+//==========Button About Us=============//
+.email_button{
+    input{
+        @include boder_bold;
+        border: 2px solid #000;
+        width: 100%;
+        padding: 15px;
+        font-style: italic;
+        font-size: 18px;
+        margin-top: 38px;
+        margin-bottom: 20px;
+    }
+}
+.button_submit{
+    button{
+        border: none;
+        background: none;
+        outline: none;
+        padding-top: 20px;
+        a{
+            @include boder_bold;
+            background: $color_pink;
+            border: 2px solid #000000;
+            padding: 16px 70px;
+            color: #000000;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
 //===========Start===============//
 
 .rate {
     float: left;
-    height: 46px;
+    height: 30px;
+    
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -96,15 +141,13 @@
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:30px;
+    font-size:20px;
     color:#000;
 }
 .rate:not(:checked) > label:before {
     content: '★ ';
 }
-
-
-
+//===========Carousel===============//
 .swiper-button-next, .swiper-button-prev{
     color: #000;
 }

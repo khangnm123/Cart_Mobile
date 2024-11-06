@@ -1,7 +1,8 @@
 @import './variable_.scss';
+//========Nơi để xử lý Footer============//
 footer{
     background-color: $color-pink5E;
-    padding: 15px 5px;
+    padding: 45px 5px;
     ul{
         li{
             padding-bottom: 15px;
@@ -11,7 +12,7 @@ footer{
             }
             a{
                 color: $color-green;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         .row{
@@ -22,10 +23,15 @@ footer{
           }
         }
     }
+    .list_contest{
+        display: grid !important;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+    }
 }
 .footer_end{
     background-color: $color-green;
-    padding: 15px 5px;
+    padding: 25px 5px;
     .text_a{
         a{
         color: #FFFFFF;
@@ -33,6 +39,7 @@ footer{
         }
     }
     .text1_a{
+        margin-right: 65px;
        a{
         color: #FFFFFF;
         font-size: 16px;
