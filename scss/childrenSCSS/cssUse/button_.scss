@@ -51,23 +51,26 @@
 .button_flex{
     padding-top: 50px;
     button{
-        @include buttonUse;
-        a{
-            @include boder_bold;
-            padding: 14px 80px;
-            font-size: 24px;
-            font-weight: bold;
-        }
+        padding: 15px 5px;
+        margin: 0px 10px
     }
     .button_left1{
+        @include boder_bold;
+        background: none;
+        border: 2px solid #003F12;
         a{
-            border: 2px solid $color-green;
+            font-size: 20px;
+            font-weight: bold;
             color: #000000;
         }
     }
     .button_left2{
+        @include boder_bold;
+        background: $color-green;
+        border: 2px solid #003F12;
         a{
-            background: $color-green !important;
+            font-size: 20px;
+            font-weight: bold;
             color: #FFFFFF;
         }
     }
@@ -141,7 +144,7 @@
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:20px;
+    font-size:15px;
     color:#000;
 }
 .rate:not(:checked) > label:before {
@@ -151,3 +154,83 @@
 .swiper-button-next, .swiper-button-prev{
     color: #000;
 }
+
+//=========Drop Down CSS=======================//
+.accordion2 {
+    width: 100%;
+    background: none;
+    margin: 0 -5px;
+    border: none;
+    outline: none;
+  }
+  
+  .accordion2 .accordion-content {
+    margin: 5px 0px;
+    background: #FFF7F0;
+    overflow: hidden;
+    background-color: $color_pink5E;
+  }
+  .accordion2 .accordion-content header .title {
+    color: #000000;
+    width: 100%;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .accordion2 .accordion-content header i {
+    color: #000000;
+  }
+  .accordion2 .accordion-content .center_flex {
+    background-color: $color-green6C;
+    text-align: left;
+  }
+  
+  .accordion-content header {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+  }
+  
+  .accordion-content.open header {
+    min-height: 35px;
+  }
+  
+  .accordion-content header .title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .accordion-content header i {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .accordion-content .description {
+    height: 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+  }
+  .accordion-content .description ul {
+    list-style-type: none;
+  }
+  .accordion-content .description ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .accordion-content .description ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+  }
